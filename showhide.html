@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html> 
+  
+<head> 
+    <title> 
+        Hide or show HTML elements using 
+        visibility property in JavaScript 
+    </title> 
+      
+    <style> 
+            .container { 
+            height: 80px; 
+            width: 250px; 
+            border: 2px solid black; 
+            background-color: green; 
+            color: white; 
+    </style> 
+</head> 
+  
+<body> 
+    <center> 
+        <div class="container"> 
+            <h1>internship</h1> 
+        </div> 
+          
+        <p> 
+            Click the buttons to show 
+            or hide the green box 
+        </p> 
+  
+        <button onclick="showElement()"> 
+            Show Element 
+        </button> 
+          
+        <button onclick="hideElement()"> 
+            Hide Element 
+        </button> 
+    </center> 
+      
+    <script type="text/javascript"> 
+        function showElement() { 
+            element = document.querySelector('.container'); 
+            element.style.visibility = 'visible'; 
+        } 
+  
+        function hideElement() { 
+            element = document.querySelector('.container'); 
+            element.style.visibility = 'hidden'; 
+        } 
+    </script> 
+</body> 
+  
+</html>                     
